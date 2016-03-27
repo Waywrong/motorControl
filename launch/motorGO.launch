@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>  
+	<param name="tf_prefix" value="" />
+  	<node name="motorControl" pkg="motorGo" type="motorGo">
+    		<rosparam file="$(find motorGo)/config/robot.yaml" command="load" />
+  	</node>
+</launch>
